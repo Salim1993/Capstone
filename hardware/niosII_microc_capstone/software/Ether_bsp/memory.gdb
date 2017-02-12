@@ -3,7 +3,7 @@
 # Machine generated for CPU 'nios2_qsys_0' in SOPC Builder design 'niosII_system'
 # SOPC Builder design path: ../../niosII_system.sopcinfo
 #
-# Generated: Sat Feb 11 12:06:15 MST 2017
+# Generated: Sat Feb 11 16:56:10 MST 2017
 
 # DO NOT MODIFY THIS FILE
 #
@@ -49,5 +49,8 @@
 # sdram_0
 memory 0x800000 0x1000000 cache
 
+# generic_tristate_controller_0
+memory 0x1400000 0x1800000 cache
+
 # onchip_memory2_0
-memory 0x1104000 0x1108000 cache
+memory 0x1904000 0x1908000 cache

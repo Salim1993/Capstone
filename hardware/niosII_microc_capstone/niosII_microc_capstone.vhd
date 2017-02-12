@@ -89,7 +89,15 @@ library ieee;
 		SD_CMD		:	inout	std_LOGIC;
 		SD_DAT		:	inout	std_LOGIC;
 		SD_DAT3		:	inout	std_LOGIC;
-		SD_CLK		:	out	std_LOGIC
+		SD_CLK		:	out	std_LOGIC;
+		
+		-- FLASH
+		FL_ADDR     :  out   std_logic_vector (21 downto 0);
+		FL_CE_N     :  out   std_logic_vector (0 downto 0);
+		FL_OE_N     :  out   std_logic_vector (0 downto 0);
+		FL_DQ     :  inout   std_logic_vector (7 downto 0);
+		FL_RST_N    :  out   std_logic_vector (0 downto 0);
+		FL_WE_N     :  out   std_logic_vector (0 downto 0)
 	);
 end niosII_microc_capstone;
 
@@ -125,14 +133,14 @@ architecture structure of niosII_microc_capstone is
             character_lcd_0_external_interface_EN   : out   std_logic;                                        -- EN
             character_lcd_0_external_interface_RS   : out   std_logic;                                        -- RS
             character_lcd_0_external_interface_RW   : out   std_logic;                                        -- RW
-				dm9000a_if_0_s1_export_DATA             : inout std_logic_vector(15 downto 0) := (others => 'X'); -- DATA
-            dm9000a_if_0_s1_export_CMD              : out   std_logic;                                        -- CMD
-            dm9000a_if_0_s1_export_RD_N             : out   std_logic;                                        -- RD_N
-            dm9000a_if_0_s1_export_WR_N             : out   std_logic;                                        -- WR_N
-            dm9000a_if_0_s1_export_CS_N             : out   std_logic;                                        -- CS_N
-            dm9000a_if_0_s1_export_RST_N            : out   std_logic;                                        -- RST_N
-            dm9000a_if_0_s1_export_INT              : in    std_logic                     := 'X';             -- INT
-            dm9000a_if_0_s1_export_CLK              : out   std_logic;                                        -- CLK
+				dm9000a_s1_export_DATA             		 : inout std_logic_vector(15 downto 0) := (others => 'X'); -- DATA
+            dm9000a_s1_export_CMD              		 : out   std_logic;                                        -- CMD
+            dm9000a_s1_export_RD_N             		 : out   std_logic;                                        -- RD_N
+            dm9000a_s1_export_WR_N             		 : out   std_logic;                                        -- WR_N
+            dm9000a_s1_export_CS_N             		 : out   std_logic;                                        -- CS_N
+            dm9000a_s1_export_RST_N            		 : out   std_logic;                                        -- RST_N
+            dm9000a_s1_export_INT              		 : in    std_logic                     := 'X';             -- INT
+            dm9000a_s1_export_CLK              		 : out   std_logic;                                        -- CLK
 				video_vga_controller_0_external_interface_CLK               : out   std_logic;                                        -- CLK
             video_vga_controller_0_external_interface_HS                : out   std_logic;                                        -- HS
             video_vga_controller_0_external_interface_VS                : out   std_logic;                                        -- VS
@@ -144,7 +152,12 @@ architecture structure of niosII_microc_capstone is
             altera_up_sd_card_avalon_interface_0_conduit_end_b_SD_cmd   : inout std_logic                     := 'X';             -- b_SD_cmd
             altera_up_sd_card_avalon_interface_0_conduit_end_b_SD_dat   : inout std_logic                     := 'X';             -- b_SD_dat
             altera_up_sd_card_avalon_interface_0_conduit_end_b_SD_dat3  : inout std_logic                     := 'X';             -- b_SD_dat3
-            altera_up_sd_card_avalon_interface_0_conduit_end_o_SD_clock : out   std_logic                                         -- o_SD_clock
+            altera_up_sd_card_avalon_interface_0_conduit_end_o_SD_clock : out   std_logic;													 -- o_SD_clock
+				tristate_conduit_bridge_0_out_generic_tristate_controller_0_tcm_address_out 		: out std_LOGIC_VECTOR(21 downto 0); -- tristate_conduit_bridge_0_out.generic_tristate_controller_0_tcm_read_n_out
+				tristate_conduit_bridge_0_out_generic_tristate_controller_0_tcm_data_out 			: inout std_LOGIC_VECTOR(7 downto 0);--                              .generic_tristate_controller_0_tcm_data_out
+				tristate_conduit_bridge_0_out_generic_tristate_controller_0_tcm_write_n_out 		: out std_LOGIC;							 --                              .generic_tristate_controller_0_tcm_chipselect_n_out
+				tristate_conduit_bridge_0_out_generic_tristate_controller_0_tcm_chipselect_n_out : out std_LOGIC;							 --                              .generic_tristate_controller_0_tcm_write_n_out
+				tristate_conduit_bridge_0_out_generic_tristate_controller_0_tcm_read_n_out 		: out std_LOGIC							 --                              .generic_tristate_controller_0_tcm_address_out
         );
     end component niosII_system;
 
@@ -161,6 +174,7 @@ begin
 	
 	DRAM_UDQM <= DQM(1);
 	DRAM_LDQM <= DQM(0);
+	FL_RST_N(0)  <= '1';
 
 	--need to create proccess that will generate a 25 mhz clock for ethernet
 	process(CLOCK_50)
@@ -201,13 +215,13 @@ begin
             character_lcd_0_external_interface_EN   => LCD_EN,   
             character_lcd_0_external_interface_RS   => LCD_RS,   
             character_lcd_0_external_interface_RW   => LCD_RW,						
-				dm9000a_if_0_s1_export_DATA             => ENET_DATA,             						  --             					 dm9000a_if_0_s1_export.DATA
-            dm9000a_if_0_s1_export_CMD              => ENET_CMD,              						  --                                   				  .CMD
-            dm9000a_if_0_s1_export_RD_N             => ENET_RD_N,             						  --                                   				  .RD_N
-            dm9000a_if_0_s1_export_WR_N             => ENET_WR_N,             					     --                                   				  .WR_N
-            dm9000a_if_0_s1_export_CS_N             => ENET_CS_N,             						  --                                   				  .CS_N
-            dm9000a_if_0_s1_export_RST_N            => ENET_RST_N,            						  --                                   				  .RST_N
-            dm9000a_if_0_s1_export_INT              => ENET_INT,               						  --                                   				  .INT      
+				dm9000a_s1_export_DATA             => ENET_DATA,             						  	  	  --             					 dm9000a_if_0_s1_export.DATA
+            dm9000a_s1_export_CMD              => ENET_CMD,              						  		  --                                   				  .CMD
+            dm9000a_s1_export_RD_N             => ENET_RD_N,             						  		  --                                   				  .RD_N
+            dm9000a_s1_export_WR_N             => ENET_WR_N,             					     		  --                                   				  .WR_N
+            dm9000a_s1_export_CS_N             => ENET_CS_N,             						  		  --                                   				  .CS_N
+            dm9000a_s1_export_RST_N            => ENET_RST_N,            						  		  --                                   				  .RST_N
+            dm9000a_s1_export_INT              => ENET_INT,               						  		  --                                   				  .INT      
 				video_vga_controller_0_external_interface_CLK               => VGA_CLK,               --        video_vga_controller_0_external_interface.CLK
             video_vga_controller_0_external_interface_HS                => VGA_HS,                --                                                 .HS
             video_vga_controller_0_external_interface_VS                => VGA_VS,                --                                                 .VS
@@ -219,8 +233,13 @@ begin
             altera_up_sd_card_avalon_interface_0_conduit_end_b_SD_cmd   => SD_CMD,   				  -- altera_up_sd_card_avalon_interface_0_conduit_end.b_SD_cmd
             altera_up_sd_card_avalon_interface_0_conduit_end_b_SD_dat   => SD_DAT,   				  --                                                 .b_SD_dat
             altera_up_sd_card_avalon_interface_0_conduit_end_b_SD_dat3  => SD_DAT3,  				  --                                                 .b_SD_dat3
-            altera_up_sd_card_avalon_interface_0_conduit_end_o_SD_clock => SD_CLK  					  --                                                 .o_SD_clock
-        );
+            altera_up_sd_card_avalon_interface_0_conduit_end_o_SD_clock => SD_CLK,  				  --                                                 .o_SD_clock
+				tristate_conduit_bridge_0_out_generic_tristate_controller_0_tcm_address_out => FL_ADDR,
+				tristate_conduit_bridge_0_out_generic_tristate_controller_0_tcm_data_out => FL_DQ,
+				tristate_conduit_bridge_0_out_generic_tristate_controller_0_tcm_write_n_out => FL_WE_N(0),
+				tristate_conduit_bridge_0_out_generic_tristate_controller_0_tcm_chipselect_n_out => FL_CE_N(0),
+				tristate_conduit_bridge_0_out_generic_tristate_controller_0_tcm_read_n_out => FL_OE_N(0)
+		  );
 
 end structure;
 
