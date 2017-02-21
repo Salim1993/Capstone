@@ -211,9 +211,12 @@ OS_EVENT *board_control_mbox;
 
 int main (int argc, char* argv[], char* envp[])
 {
+
+	/**
 	alt_up_character_lcd_dev *lcd = alt_up_character_lcd_open_dev(CHARACTER_LCD_0_NAME);
 	alt_up_character_lcd_init(lcd);
 	alt_up_character_lcd_string(lcd, "Hello");
+	*/
 	DM9000A_INSTANCE(DM9000A,dm9000a_0);
 	DM9000A_INIT(DM9000A,dm9000a_0);
 

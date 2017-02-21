@@ -35,8 +35,8 @@
    <object class="org.jdesktop.application.SessionStorage$WindowState"> 
     <void property="bounds"> 
      <object class="java.awt.Rectangle"> 
-      <int>237</int> 
-      <int>59</int> 
+      <int>228</int> 
+      <int>51</int> 
       <int>923</int> 
       <int>762</int> 
      </object> 
