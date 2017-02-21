@@ -50,7 +50,7 @@
 #include "dm9000a.h"
 #include "altera_up_avalon_character_lcd.h"
 
-#define LCD_DISPLAY_NAME CHARACTER_LCD_0_NAME
+#define LCD_DISPLAY_NAME LCD_0_NAME
 
 #ifndef ALT_INICHE
   #error This Web Server requires the Interniche IP Stack Software Component.
@@ -103,8 +103,6 @@ void lcd_ip_addr()
 {
   /* Declare local ipaddr variable. */
   ip_addr* ipaddr;
-  char ipBuffer [16];
-  int bufferCheck;
   
   /* Assign ipaddr to the network interface's IP Address. 
    * NOTE:  This code assumes that only a single network
@@ -113,22 +111,12 @@ void lcd_ip_addr()
   ipaddr = &nets[0]->n_ipaddr;
   
   /* Display the IP Address (initially) on the LCD Display. */
-
+  /**
   	alt_up_character_lcd_dev *lcd = alt_up_character_lcd_open_dev(CHARACTER_LCD_0_NAME);
   	alt_up_character_lcd_init(lcd);
-  	bufferCheck = snprintf(ipBuffer,16, "%d.%d.%d.%d",
-  	        ip4_addr1(*ipaddr),
-  	        ip4_addr2(*ipaddr),
-  	        ip4_addr3(*ipaddr),
-  	        ip4_addr4(*ipaddr));
-  	if(bufferCheck >= 0 && bufferCheck < 16){
-  		alt_up_character_lcd_string(lcd, ipBuffer);
-  	} else {
-  		alt_up_character_lcd_string(lcd, "Error with IP");
-  	}
+  	alt_up_character_lcd_string(lcd, "Hello");
+  */
 
-
-  /*
   lcdDevice = fopen( "/dev/lcd_display", "w" );
   fprintf(lcdDevice, "\nIP Address\n%d.%d.%d.%d\n",
         ip4_addr1(*ipaddr),
@@ -136,7 +124,6 @@ void lcd_ip_addr()
         ip4_addr3(*ipaddr),
         ip4_addr4(*ipaddr));
   fclose( lcdDevice );
-  */
 }
 #endif
 
@@ -351,17 +338,9 @@ void lcd_output_text( char text[20] )
 #endif
   else
   {
-
-	alt_up_character_lcd_dev *lcd = alt_up_character_lcd_open_dev(CHARACTER_LCD_0_NAME);
-	alt_up_character_lcd_init(lcd);
-	alt_up_character_lcd_string(lcd, text);
-
-
-	/*
-    lcdDevice = fopen( "/dev/lcd_display", "w" );
+    lcdDevice = fopen( "/dev/lcd_display", "w" ); 
     fprintf(lcdDevice, "\n\n%s", text);
     fclose( lcdDevice );
-    */
   }
 }
 #endif

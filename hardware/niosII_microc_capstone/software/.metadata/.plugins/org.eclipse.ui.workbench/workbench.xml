@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="32" version="2.0">
+<workbench progressCount="33" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="0" y="28">
 <fastViewData fastViewLocation="1024"/>
@@ -28,34 +28,29 @@
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="3"/>
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
-<part id="3"/>
-<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="system.h" partName="system.h" path="/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/software/Webserver_bsp/system.h" title="system.h" tooltip="Webserver_bsp/system.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Webserver_bsp/system.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6871" selectionTopPixel="3329"/>
-</editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="network_utilities.c" partName="network_utilities.c" path="/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/software/Webserver/network_utilities.c" title="network_utilities.c" tooltip="Webserver/network_utilities.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Webserver/network_utilities.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3259" selectionTopPixel="1396"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="11322" selectionTopPixel="0"/>
 </editor>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="web_server.c" partName="web_server.c" path="/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/software/Webserver/web_server.c" title="web_server.c" tooltip="Webserver/web_server.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Webserver/web_server.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3847" selectionTopPixel="1514"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="10861" selectionTopPixel="5172"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="dm9000a.h" partName="dm9000a.h" path="/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/software/Webserver/dm9000a.h" title="dm9000a.h" tooltip="Webserver/dm9000a.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Webserver/dm9000a.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="590" selectionTopPixel="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="altera_up_avalon_character_lcd.h" partName="altera_up_avalon_character_lcd.h" path="/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/software/Webserver_bsp/drivers/inc/altera_up_avalon_character_lcd.h" title="altera_up_avalon_character_lcd.h" tooltip="Webserver_bsp/drivers/inc/altera_up_avalon_character_lcd.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Webserver_bsp/drivers/inc/altera_up_avalon_character_lcd.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="472"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="web_server.h" partName="web_server.h" path="/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/software/Webserver/web_server.h" title="web_server.h" tooltip="Webserver/web_server.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Webserver/web_server.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1858" selectionTopPixel="497"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="system.h" partName="system.h" path="/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/software/Webserver_bsp/system.h" title="system.h" tooltip="Webserver_bsp/system.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Webserver_bsp/system.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6866" selectionTopPixel="3332"/>
 </editor>
 </editors>
 <views>
@@ -67,8 +62,6 @@
 </view>
 <view id="org.eclipse.search.ui.views.SearchView" partName="Search">
 <viewState isPinned="false">
-<view IMemento.internal.id="org.eclipse.search.text.FileSearchResultPage" org.eclipse.search.lastActivation="2" org.eclipse.search.resultpage.layout="2" org.eclipse.search.resultpage.limit="1000" org.eclipse.search.resultpage.sorting="2"/>
-<view IMemento.internal.id="org.eclipse.cdt.ui.pdomSearchViewPage" definitionColumnWidth="150" locationColumnWidth="300" matchColumnWidth="300" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" showEnclosingDefinitions="true"/>
 <view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
 </viewState>
 </view>
@@ -76,8 +69,9 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (5 items)"/>
+<category IMemento.internal.id="Warnings (6 items)"/>
 <category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="418" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="612"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -107,7 +101,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="com.altera.sbtgui.ui.cPerspective">
+<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="com.altera.sbtgui.ui.cPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -304,8 +298,8 @@
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
-<page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [2-1.6].1.0" label="Nios II Console"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="Search"/>
+<page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [2-1.6].1.0" label="Nios II Console"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
@@ -323,165 +317,165 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Webserver_bsp/system.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Webserver/web_server.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Webserver/dm9000a.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Webserver/http.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Webserver/dm9000a.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Webserver/http.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Webserver/network_utilities.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Webserver_bsp/system.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Webserver_bsp/drivers/inc/altera_up_avalon_character_lcd.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Webserver/web_server.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Webserver_bsp/system.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Webserver/network_utilities.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Webserver_bsp/system.h"/>
 </editors>
-<item historyLabel="web_server.c" index="1">
-<position info="not_deleted" x="7089" y="0"/>
-</item>
-<item historyLabel="dm9000a.h" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="system.h" index="0">
-<position info="not_deleted" x="4839" y="12"/>
-</item>
-<item historyLabel="web_server.c" index="1">
-<position info="not_deleted" x="7089" y="0"/>
-</item>
-<item historyLabel="dm9000a.h" index="2">
-<position info="not_deleted" x="306" y="0"/>
-</item>
-<item historyLabel="web_server.c" index="1">
-<position info="not_deleted" x="7089" y="0"/>
-</item>
-<item historyLabel="dm9000a.h" index="2">
-<position info="not_deleted" x="1019" y="0"/>
-</item>
-<item historyLabel="web_server.c" index="1">
-<position info="not_deleted" x="7055" y="36"/>
-</item>
-<item historyLabel="dm9000a.h" index="2">
-<position info="not_deleted" x="1019" y="0"/>
-</item>
-<item historyLabel="system.h" index="0">
-<position info="not_deleted" x="4839" y="12"/>
-</item>
-<item historyLabel="web_server.c" index="1">
-<position info="not_deleted" x="7079" y="0"/>
-</item>
-<item historyLabel="web_server.c" index="1">
-<position info="not_deleted" x="7112" y="0"/>
-</item>
-<item historyLabel="dm9000a.h" index="2">
-<position info="not_deleted" x="1019" y="0"/>
-</item>
-<item historyLabel="web_server.c" index="1">
-<position info="not_deleted" x="6797" y="0"/>
-</item>
-<item historyLabel="dm9000a.h" index="2">
-<position info="not_deleted" x="1019" y="0"/>
-</item>
-<item historyLabel="web_server.c" index="1">
-<position info="not_deleted" x="6797" y="0"/>
-</item>
-<item historyLabel="http.c" index="3">
-<position info="not_deleted" x="4695" y="0"/>
-</item>
-<item historyLabel="web_server.c" index="1">
-<position info="not_deleted" x="7890" y="0"/>
-</item>
-<item historyLabel="system.h" index="0">
-<position info="not_deleted" x="6952" y="20"/>
-</item>
-<item historyLabel="web_server.c" index="1">
-<position info="not_deleted" x="7890" y="0"/>
-</item>
-<item historyLabel="web_server.c" index="1">
-<position info="not_deleted" x="6870" y="0"/>
-</item>
-<item historyLabel="system.h" index="0">
-<position info="not_deleted" x="7119" y="0"/>
-</item>
-<item historyLabel="web_server.c" index="1">
-<position info="not_deleted" x="6914" y="0"/>
-</item>
-<item historyLabel="web_server.c" index="1">
-<position info="not_deleted" x="6392" y="8"/>
-</item>
-<item historyLabel="dm9000a.h" index="4">
-<position info="not_deleted" x="1019" y="0"/>
-</item>
-<item historyLabel="http.c" index="5">
-<position info="not_deleted" x="4695" y="0"/>
-</item>
-<item historyLabel="dm9000a.h" index="4">
-<position info="not_deleted" x="590" y="0"/>
-</item>
-<item historyLabel="network_utilities.c" index="6">
-<position info="not_deleted" x="1690" y="0"/>
-</item>
-<item historyLabel="web_server.c" index="1">
-<position info="not_deleted" x="7055" y="0"/>
-</item>
-<item historyLabel="dm9000a.h" index="4">
-<position info="not_deleted" x="590" y="0"/>
-</item>
-<item historyLabel="http.c" index="5">
-<position info="not_deleted" x="4695" y="0"/>
-</item>
-<item historyLabel="dm9000a.h" index="4">
-<position info="not_deleted" x="590" y="0"/>
-</item>
-<item historyLabel="network_utilities.c" index="6">
+<item historyLabel="network_utilities.c" index="2">
 <position info="not_deleted" x="2938" y="0"/>
 </item>
-<item historyLabel="web_server.c" index="1">
-<position info="not_deleted" x="3003" y="9"/>
-</item>
-<item historyLabel="network_utilities.c" index="6">
-<position info="not_deleted" x="2938" y="0"/>
-</item>
-<item historyLabel="web_server.c" index="1">
-<position info="not_deleted" x="10247" y="0"/>
-</item>
-<item historyLabel="web_server.h" index="7">
-<position info="not_deleted" x="1858" y="0"/>
-</item>
-<item historyLabel="network_utilities.c" index="6">
-<position info="not_deleted" x="2938" y="0"/>
-</item>
-<item historyLabel="network_utilities.c" index="6">
+<item historyLabel="network_utilities.c" index="2">
 <position info="not_deleted" x="2360" y="9"/>
 </item>
-<item historyLabel="dm9000a.h" index="4">
+<item historyLabel="dm9000a.h" index="1">
 <position info="not_deleted" x="590" y="0"/>
 </item>
-<item historyLabel="web_server.c" index="1">
+<item historyLabel="web_server.c" index="0">
 <position info="not_deleted" x="10247" y="0"/>
 </item>
-<item historyLabel="network_utilities.c" index="6">
+<item historyLabel="network_utilities.c" index="2">
 <position info="not_deleted" x="3259" y="0"/>
 </item>
-<item historyLabel="web_server.c" index="1">
+<item historyLabel="web_server.c" index="0">
 <position info="not_deleted" x="10247" y="0"/>
 </item>
-<item historyLabel="web_server.c" index="1">
+<item historyLabel="web_server.c" index="0">
 <position info="not_deleted" x="7055" y="0"/>
 </item>
-<item historyLabel="web_server.c" index="1">
+<item historyLabel="web_server.c" index="0">
 <position info="not_deleted" x="2822" y="9"/>
 </item>
-<item historyLabel="system.h" index="8">
+<item historyLabel="system.h" index="3">
 <position info="not_deleted" x="7013" y="0"/>
 </item>
-<item historyLabel="web_server.c" index="1">
+<item historyLabel="web_server.c" index="0">
 <position info="not_deleted" x="4052" y="0"/>
 </item>
-<item historyLabel="network_utilities.c" index="6">
+<item historyLabel="network_utilities.c" index="2">
 <position info="not_deleted" x="3259" y="0"/>
+</item>
+<item historyLabel="system.h" index="3">
+<position info="not_deleted" x="6871" y="0"/>
+</item>
+<item historyLabel="web_server.c" index="0">
+<position info="not_deleted" x="4052" y="0"/>
+</item>
+<item historyLabel="altera_up_avalon_character_lcd.h" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="web_server.h" index="5">
+<position info="not_deleted" x="1858" y="0"/>
+</item>
+<item historyLabel="web_server.c" index="0">
+<position info="not_deleted" x="4805" y="0"/>
+</item>
+<item historyLabel="altera_up_avalon_character_lcd.h" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="system.h" index="6">
+<position info="not_deleted" x="6871" y="0"/>
+</item>
+<item historyLabel="altera_up_avalon_character_lcd.h" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="web_server.c" index="0">
+<position info="not_deleted" x="4805" y="0"/>
+</item>
+<item historyLabel="system.h" index="6">
+<position info="not_deleted" x="6871" y="0"/>
+</item>
+<item historyLabel="altera_up_avalon_character_lcd.h" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="web_server.c" index="0">
+<position info="not_deleted" x="4805" y="0"/>
+</item>
+<item historyLabel="network_utilities.c" index="7">
+<position info="not_deleted" x="3259" y="0"/>
+</item>
+<item historyLabel="system.h" index="6">
+<position info="not_deleted" x="6871" y="0"/>
+</item>
+<item historyLabel="web_server.c" index="0">
+<position info="not_deleted" x="4586" y="0"/>
+</item>
+<item historyLabel="system.h" index="8">
+<position info="not_deleted" x="7077" y="20"/>
+</item>
+<item historyLabel="web_server.c" index="0">
+<position info="not_deleted" x="4585" y="0"/>
+</item>
+<item historyLabel="network_utilities.c" index="7">
+<position info="not_deleted" x="11322" y="0"/>
+</item>
+<item historyLabel="web_server.c" index="0">
+<position info="not_deleted" x="4585" y="0"/>
+</item>
+<item historyLabel="system.h" index="8">
+<position info="not_deleted" x="7077" y="20"/>
+</item>
+<item historyLabel="web_server.c" index="0">
+<position info="not_deleted" x="2536" y="0"/>
+</item>
+<item historyLabel="network_utilities.c" index="7">
+<position info="not_deleted" x="11322" y="0"/>
 </item>
 <item historyLabel="system.h" index="8">
 <position info="not_deleted" x="6871" y="0"/>
 </item>
-<item active="true" historyLabel="web_server.c" index="1">
-<position info="not_deleted" x="4052" y="0"/>
+<item historyLabel="web_server.c" index="0">
+<position info="not_deleted" x="2994" y="0"/>
+</item>
+<item historyLabel="system.h" index="8">
+<position info="not_deleted" x="7077" y="20"/>
+</item>
+<item historyLabel="network_utilities.c" index="7">
+<position info="not_deleted" x="11322" y="0"/>
+</item>
+<item historyLabel="web_server.c" index="0">
+<position info="not_deleted" x="11015" y="0"/>
+</item>
+<item historyLabel="network_utilities.c" index="7">
+<position info="not_deleted" x="11322" y="0"/>
+</item>
+<item historyLabel="web_server.c" index="0">
+<position info="not_deleted" x="11015" y="0"/>
+</item>
+<item historyLabel="web_server.c" index="0">
+<position info="not_deleted" x="3753" y="0"/>
+</item>
+<item historyLabel="system.h" index="8">
+<position info="not_deleted" x="6866" y="0"/>
+</item>
+<item historyLabel="altera_up_avalon_character_lcd.h" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="system.h" index="8">
+<position info="not_deleted" x="6866" y="0"/>
+</item>
+<item historyLabel="altera_up_avalon_character_lcd.h" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="web_server.c" index="0">
+<position info="not_deleted" x="3753" y="0"/>
+</item>
+<item historyLabel="altera_up_avalon_character_lcd.h" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="system.h" index="8">
+<position info="not_deleted" x="6866" y="0"/>
+</item>
+<item historyLabel="web_server.c" index="0">
+<position info="not_deleted" x="3753" y="0"/>
+</item>
+<item active="true" historyLabel="web_server.c" index="0">
+<position info="not_deleted" x="4400" y="20"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -504,6 +498,12 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system.h" tooltip="Webserver_bsp/system.h">
+<persistable path="/Webserver_bsp/system.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="altera_up_avalon_character_lcd.h" tooltip="Webserver_bsp/drivers/inc/altera_up_avalon_character_lcd.h">
+<persistable path="/Webserver_bsp/drivers/inc/altera_up_avalon_character_lcd.h"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="web_server.h" tooltip="Webserver/web_server.h">
 <persistable path="/Webserver/web_server.h"/>
 </file>
@@ -528,9 +528,6 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="network_utilities.c" tooltip="Webserver/network_utilities.c">
 <persistable path="/Webserver/network_utilities.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system.h" tooltip="Webserver_bsp/system.h">
-<persistable path="/Webserver_bsp/system.h"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="alt_sys_init.c" tooltip="Ether_bsp/alt_sys_init.c">
 <persistable path="/Ether_bsp/alt_sys_init.c"/>
 </file>
@@ -545,9 +542,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="alt_sys_init.c" tooltip="capstone_bsp/alt_sys_init.c">
 <persistable path="/capstone_bsp/alt_sys_init.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="web_server.c" tooltip="capstone/web_server.c">
-<persistable path="/capstone/web_server.c"/>
 </file>
 </mruList>
 </workbench>

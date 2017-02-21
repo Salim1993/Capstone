@@ -116,7 +116,7 @@ void lcd_ip_addr()
 
   	alt_up_character_lcd_dev *lcd = alt_up_character_lcd_open_dev(CHARACTER_LCD_0_NAME);
   	alt_up_character_lcd_init(lcd);
-  	bufferCheck = snprintf(ipBuffer,16, "%d.%d.%d.%d",
+  	bufferCheck = snprintf(ipBuffer, "%d.%d.%d.%d",16,
   	        ip4_addr1(*ipaddr),
   	        ip4_addr2(*ipaddr),
   	        ip4_addr3(*ipaddr),
@@ -351,11 +351,11 @@ void lcd_output_text( char text[20] )
 #endif
   else
   {
-
+	/*
 	alt_up_character_lcd_dev *lcd = alt_up_character_lcd_open_dev(CHARACTER_LCD_0_NAME);
 	alt_up_character_lcd_init(lcd);
 	alt_up_character_lcd_string(lcd, text);
-
+	*/
 
 	/*
     lcdDevice = fopen( "/dev/lcd_display", "w" );
