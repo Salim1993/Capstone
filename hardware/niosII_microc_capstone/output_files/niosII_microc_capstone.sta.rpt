@@ -1,5 +1,9 @@
 TimeQuest Timing Analyzer report for niosII_microc_capstone
+<<<<<<< HEAD
 Sat Feb 11 17:46:12 2017
+=======
+Mon Feb 27 13:34:32 2017
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
 Quartus II 32-bit Version 12.1 Build 243 01/31/2013 Service Pack 1 SJ Full Version
 
 
@@ -296,7 +300,11 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
     Info: Version 12.1 Build 243 01/31/2013 Service Pack 1 SJ Full Version
+<<<<<<< HEAD
     Info: Processing started: Sat Feb 11 17:46:06 2017
+=======
+    Info: Processing started: Mon Feb 27 13:34:27 2017
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
 Info: Command: quartus_sta niosII_microc_capstone -c niosII_microc_capstone
 Info: qsta_default_script.tcl version: #1
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
@@ -502,9 +510,15 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 11 warnings
+<<<<<<< HEAD
     Info: Peak virtual memory: 408 megabytes
     Info: Processing ended: Sat Feb 11 17:46:12 2017
     Info: Elapsed time: 00:00:06
+=======
+    Info: Peak virtual memory: 399 megabytes
+    Info: Processing ended: Mon Feb 27 13:34:32 2017
+    Info: Elapsed time: 00:00:05
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
     Info: Total CPU time (on all processors): 00:00:03
 
 

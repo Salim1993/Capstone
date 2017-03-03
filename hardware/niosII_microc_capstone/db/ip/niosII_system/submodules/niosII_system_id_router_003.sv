@@ -32,7 +32,7 @@
 module niosII_system_id_router_003_default_decode
   #(
      parameter DEFAULT_CHANNEL = 0,
-               DEFAULT_DESTID = 0 
+               DEFAULT_DESTID = 1 
    )
   (output [84 - 81 : 0] default_destination_id,
    output [12-1 : 0] default_src_channel
@@ -148,11 +148,19 @@ module niosII_system_id_router_003
         destid      = sink_data[PKT_DEST_ID_H : PKT_DEST_ID_L];
 
 
+<<<<<<< HEAD
         if (destid == 0 ) begin
             src_channel = 12'b01;
         end
         if (destid == 1 ) begin
             src_channel = 12'b10;
+=======
+        if (destid == 1 ) begin
+            src_channel = 11'b01;
+        end
+        if (destid == 2 ) begin
+            src_channel = 11'b10;
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
         end
 
 

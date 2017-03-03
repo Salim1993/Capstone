@@ -1,5 +1,9 @@
 EDA Netlist Writer report for niosII_microc_capstone
+<<<<<<< HEAD
 Sat Feb 11 17:46:28 2017
+=======
+Mon Feb 27 13:34:44 2017
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
 Quartus II 32-bit Version 12.1 Build 243 01/31/2013 Service Pack 1 SJ Full Version
 
 
@@ -36,7 +40,11 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
+<<<<<<< HEAD
 ; EDA Netlist Writer Status ; Successful - Sat Feb 11 17:46:28 2017 ;
+=======
+; EDA Netlist Writer Status ; Successful - Mon Feb 27 13:34:44 2017 ;
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
 ; Revision Name             ; niosII_microc_capstone                ;
 ; Top-level Entity Name     ; niosII_microc_capstone                ;
 ; Family                    ; Cyclone II                            ;
@@ -66,16 +74,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                                                            ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                                                       ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; /afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/simulation/modelsim/niosII_microc_capstone.vho          ;
-; /afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/simulation/modelsim/niosII_microc_capstone_fast.vho     ;
-; /afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/simulation/modelsim/niosII_microc_capstone_vhd.sdo      ;
-; /afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/simulation/modelsim/niosII_microc_capstone_vhd_fast.sdo ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                                                                  ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                                                             ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; /afs/ualberta.ca/home/s/d/sdwowk/ECE_492_Projects/capstone/Capstone/hardware/niosII_microc_capstone/simulation/modelsim/niosII_microc_capstone.vho          ;
+; /afs/ualberta.ca/home/s/d/sdwowk/ECE_492_Projects/capstone/Capstone/hardware/niosII_microc_capstone/simulation/modelsim/niosII_microc_capstone_fast.vho     ;
+; /afs/ualberta.ca/home/s/d/sdwowk/ECE_492_Projects/capstone/Capstone/hardware/niosII_microc_capstone/simulation/modelsim/niosII_microc_capstone_vhd.sdo      ;
+; /afs/ualberta.ca/home/s/d/sdwowk/ECE_492_Projects/capstone/Capstone/hardware/niosII_microc_capstone/simulation/modelsim/niosII_microc_capstone_vhd_fast.sdo ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -84,13 +92,24 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 32-bit EDA Netlist Writer
     Info: Version 12.1 Build 243 01/31/2013 Service Pack 1 SJ Full Version
+<<<<<<< HEAD
     Info: Processing started: Sat Feb 11 17:46:13 2017
+=======
+    Info: Processing started: Mon Feb 27 13:34:34 2017
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off niosII_microc_capstone -c niosII_microc_capstone
-Info (204026): Generated files "niosII_microc_capstone.vho", "niosII_microc_capstone_fast.vho", "niosII_microc_capstone_vhd.sdo" and "niosII_microc_capstone_vhd_fast.sdo" in directory "/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/simulation/modelsim/" for EDA simulation tool
+Info (204026): Generated files "niosII_microc_capstone.vho", "niosII_microc_capstone_fast.vho", "niosII_microc_capstone_vhd.sdo" and "niosII_microc_capstone_vhd_fast.sdo" in directory "/afs/ualberta.ca/home/s/d/sdwowk/ECE_492_Projects/capstone/Capstone/hardware/niosII_microc_capstone/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 0 warnings
+<<<<<<< HEAD
     Info: Peak virtual memory: 397 megabytes
     Info: Processing ended: Sat Feb 11 17:46:28 2017
     Info: Elapsed time: 00:00:15
     Info: Total CPU time (on all processors): 00:00:07
+=======
+    Info: Peak virtual memory: 381 megabytes
+    Info: Processing ended: Mon Feb 27 13:34:45 2017
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:06
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
 
 

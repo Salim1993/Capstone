@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+<<<<<<< HEAD
 	<section name="WorkbenchPreferenceDialogSettings">
 		<item value="8" key="DIALOG_Y_ORIGIN"/>
 		<item value="267" key="DIALOG_X_ORIGIN"/>
 	</section>
+=======
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
 	<section name="ImportExportAction">
 	</section>
 </section>

@@ -1,6 +1,10 @@
 <sld_project_info>
   <project>
+<<<<<<< HEAD
     <hash md5_digest_80b="1ed376e75d4db0cf918a"/>
+=======
+    <hash md5_digest_80b="bb7e1ced7710f0992c1e"/>
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
   </project>
   <file_info/>
   <hub_info ir_width="2" node_count="2"/>

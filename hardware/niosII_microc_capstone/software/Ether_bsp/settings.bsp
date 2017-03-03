@@ -2,9 +2,15 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>ucosii</BspType>
         <BspVersion>default</BspVersion>
+<<<<<<< HEAD
         <BspGeneratedTimeStamp>Feb 11, 2017 5:03:48 PM</BspGeneratedTimeStamp>
         <BspGeneratedUnixTimeStamp>1486857828863</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>/afs/ualberta.ca/home/b/e/benkhale/Documents/ECE_492/Capstone/hardware/niosII_microc_capstone/software/Ether_bsp</BspGeneratedLocation>
+=======
+        <BspGeneratedTimeStamp>Feb 11, 2017 7:01:58 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1486864918854</BspGeneratedUnixTimeStamp>
+        <BspGeneratedLocation>/afs/ualberta.ca/home/s/d/sdwowk/ECE_492_Projects/capstone/Capstone/hardware/niosII_microc_capstone/software/Ether_bsp</BspGeneratedLocation>
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>../../niosII_system.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>

@@ -29,9 +29,15 @@
 // Generation parameters:
 //   output_name:         niosII_system_cmd_xbar_demux
 //   ST_DATA_W:           113
+<<<<<<< HEAD
 //   ST_CHANNEL_W:        12
 //   NUM_OUTPUTS:         5
 //   VALID_WIDTH:         12
+=======
+//   ST_CHANNEL_W:        11
+//   NUM_OUTPUTS:         3
+//   VALID_WIDTH:         11
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
 // ------------------------------------------
 
 //------------------------------------------
@@ -76,6 +82,7 @@ module niosII_system_cmd_xbar_demux
     output reg                      src2_endofpacket,
     input                           src2_ready,
 
+<<<<<<< HEAD
     output reg                      src3_valid,
     output reg [113-1    : 0] src3_data, // ST_DATA_W=113
     output reg [12-1 : 0] src3_channel, // ST_CHANNEL_W=12
@@ -90,6 +97,8 @@ module niosII_system_cmd_xbar_demux
     output reg                      src4_endofpacket,
     input                           src4_ready,
 
+=======
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
 
     // -------------------
     // Clock & Reset
@@ -101,7 +110,11 @@ module niosII_system_cmd_xbar_demux
 
 );
 
+<<<<<<< HEAD
     localparam NUM_OUTPUTS = 5;
+=======
+    localparam NUM_OUTPUTS = 3;
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
     wire [NUM_OUTPUTS - 1 : 0] ready_vector;
 
     // -------------------
@@ -129,6 +142,7 @@ module niosII_system_cmd_xbar_demux
 
         src2_valid         = sink_channel[2] && sink_valid[2];
 
+<<<<<<< HEAD
         src3_data          = sink_data;
         src3_startofpacket = sink_startofpacket;
         src3_endofpacket   = sink_endofpacket;
@@ -143,6 +157,8 @@ module niosII_system_cmd_xbar_demux
 
         src4_valid         = sink_channel[4] && sink_valid[4];
 
+=======
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
     end
 
     // -------------------
@@ -151,10 +167,13 @@ module niosII_system_cmd_xbar_demux
     assign ready_vector[0] = src0_ready;
     assign ready_vector[1] = src1_ready;
     assign ready_vector[2] = src2_ready;
+<<<<<<< HEAD
     assign ready_vector[3] = src3_ready;
     assign ready_vector[4] = src4_ready;
+=======
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
 
-    assign sink_ready = |(sink_channel & {{7{1'b0}},{ready_vector[NUM_OUTPUTS - 1 : 0]}});
+    assign sink_ready = |(sink_channel & {{8{1'b0}},{ready_vector[NUM_OUTPUTS - 1 : 0]}});
 
 endmodule
 

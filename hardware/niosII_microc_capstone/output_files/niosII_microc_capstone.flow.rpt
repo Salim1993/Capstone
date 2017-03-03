@@ -1,5 +1,9 @@
 Flow report for niosII_microc_capstone
+<<<<<<< HEAD
 Sat Feb 11 17:46:28 2017
+=======
+Mon Feb 27 13:34:44 2017
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
 Quartus II 32-bit Version 12.1 Build 243 01/31/2013 Service Pack 1 SJ Full Version
 
 
@@ -38,18 +42,30 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
+<<<<<<< HEAD
 ; Flow Status                        ; Successful - Sat Feb 11 17:46:28 2017          ;
+=======
+; Flow Status                        ; Successful - Mon Feb 27 13:34:44 2017          ;
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
 ; Quartus II 32-bit Version          ; 12.1 Build 243 01/31/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; niosII_microc_capstone                         ;
 ; Top-level Entity Name              ; niosII_microc_capstone                         ;
 ; Family                             ; Cyclone II                                     ;
 ; Device                             ; EP2C35F672C6                                   ;
 ; Timing Models                      ; Final                                          ;
+<<<<<<< HEAD
 ; Total logic elements               ; 9,012 / 33,216 ( 27 % )                        ;
 ;     Total combinational functions  ; 8,121 / 33,216 ( 24 % )                        ;
 ;     Dedicated logic registers      ; 5,502 / 33,216 ( 17 % )                        ;
 ; Total registers                    ; 5735                                           ;
 ; Total pins                         ; 189 / 475 ( 40 % )                             ;
+=======
+; Total logic elements               ; 8,175 / 33,216 ( 25 % )                        ;
+;     Total combinational functions  ; 7,268 / 33,216 ( 22 % )                        ;
+;     Dedicated logic registers      ; 5,084 / 33,216 ( 15 % )                        ;
+; Total registers                    ; 5276                                           ;
+; Total pins                         ; 155 / 475 ( 33 % )                             ;
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 292,096 / 483,840 ( 60 % )                     ;
 ; Embedded Multiplier 9-bit elements ; 4 / 70 ( 6 % )                                 ;
@@ -62,7 +78,11 @@ applicable agreement for further details.
 +-------------------+------------------------+
 ; Option            ; Setting                ;
 +-------------------+------------------------+
+<<<<<<< HEAD
 ; Start date & time ; 02/11/2017 17:43:02    ;
+=======
+; Start date & time ; 02/27/2017 13:31:53    ;
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
 ; Main task         ; Compilation            ;
 ; Revision Name     ; niosII_microc_capstone ;
 +-------------------+------------------------+
@@ -73,7 +93,11 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
+<<<<<<< HEAD
 ; COMPILER_SIGNATURE_ID               ; 0.148686017903481                     ; --            ; --          ; --             ;
+=======
+; COMPILER_SIGNATURE_ID               ; 0.148822751015240                     ; --            ; --          ; --             ;
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
@@ -92,12 +116,21 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+<<<<<<< HEAD
 ; Analysis & Synthesis      ; 00:02:02     ; 1.0                     ; 495 MB              ; 00:01:51                           ;
 ; Fitter                    ; 00:00:44     ; 2.2                     ; 598 MB              ; 00:00:58                           ;
 ; Assembler                 ; 00:00:04     ; 1.0                     ; 355 MB              ; 00:00:03                           ;
 ; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 408 MB              ; 00:00:03                           ;
 ; EDA Netlist Writer        ; 00:00:15     ; 1.0                     ; 397 MB              ; 00:00:07                           ;
 ; Total                     ; 00:03:10     ; --                      ; --                  ; 00:03:02                           ;
+=======
+; Analysis & Synthesis      ; 00:01:36     ; 1.0                     ; 485 MB              ; 00:01:43                           ;
+; Fitter                    ; 00:00:42     ; 2.1                     ; 590 MB              ; 00:00:53                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 349 MB              ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 399 MB              ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:10     ; 1.0                     ; 381 MB              ; 00:00:06                           ;
+; Total                     ; 00:02:36     ; --                      ; --                  ; 00:02:48                           ;
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -106,11 +139,11 @@ applicable agreement for further details.
 +---------------------------+--------------------------+--------------+--------------+----------------+
 ; Module Name               ; Machine Hostname         ; OS Name      ; OS Version   ; Processor type ;
 +---------------------------+--------------------------+--------------+--------------+----------------+
-; Analysis & Synthesis      ; e3-11-11.ece.ualberta.ca ; CentOS Linux ; CentOS Linux ; x86_64         ;
-; Fitter                    ; e3-11-11.ece.ualberta.ca ; CentOS Linux ; CentOS Linux ; x86_64         ;
-; Assembler                 ; e3-11-11.ece.ualberta.ca ; CentOS Linux ; CentOS Linux ; x86_64         ;
-; TimeQuest Timing Analyzer ; e3-11-11.ece.ualberta.ca ; CentOS Linux ; CentOS Linux ; x86_64         ;
-; EDA Netlist Writer        ; e3-11-11.ece.ualberta.ca ; CentOS Linux ; CentOS Linux ; x86_64         ;
+; Analysis & Synthesis      ; e3-11-13.ece.ualberta.ca ; CentOS Linux ; CentOS Linux ; x86_64         ;
+; Fitter                    ; e3-11-13.ece.ualberta.ca ; CentOS Linux ; CentOS Linux ; x86_64         ;
+; Assembler                 ; e3-11-13.ece.ualberta.ca ; CentOS Linux ; CentOS Linux ; x86_64         ;
+; TimeQuest Timing Analyzer ; e3-11-13.ece.ualberta.ca ; CentOS Linux ; CentOS Linux ; x86_64         ;
+; EDA Netlist Writer        ; e3-11-13.ece.ualberta.ca ; CentOS Linux ; CentOS Linux ; x86_64         ;
 +---------------------------+--------------------------+--------------+--------------+----------------+
 
 

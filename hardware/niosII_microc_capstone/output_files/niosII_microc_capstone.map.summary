@@ -1,13 +1,25 @@
+<<<<<<< HEAD
 Analysis & Synthesis Status : Successful - Sat Feb 11 17:45:06 2017
+=======
+Analysis & Synthesis Status : Successful - Mon Feb 27 13:33:30 2017
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
 Quartus II 32-bit Version : 12.1 Build 243 01/31/2013 SP 1 SJ Full Version
 Revision Name : niosII_microc_capstone
 Top-level Entity Name : niosII_microc_capstone
 Family : Cyclone II
+<<<<<<< HEAD
 Total logic elements : 9,889
     Total combinational functions : 8,086
     Dedicated logic registers : 5,747
 Total registers : 5747
 Total pins : 189
+=======
+Total logic elements : 8,950
+    Total combinational functions : 7,236
+    Dedicated logic registers : 5,288
+Total registers : 5288
+Total pins : 155
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
 Total virtual pins : 0
 Total memory bits : 292,096
 Embedded Multiplier 9-bit elements : 4

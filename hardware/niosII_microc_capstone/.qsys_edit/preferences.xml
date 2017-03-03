@@ -3,12 +3,17 @@
  <debug showDebugMenu="0" />
  <systemtable filter="Default">
   <columns>
+<<<<<<< HEAD
    <connections preferredWidth="303" />
+=======
+   <connections preferredWidth="255" />
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
    <irq preferredWidth="34" />
   </columns>
  </systemtable>
  <clocktable>
   <columns>
+<<<<<<< HEAD
    <clockname preferredWidth="359" />
    <clocksource preferredWidth="358" />
    <frequency preferredWidth="340" />
@@ -17,4 +22,14 @@
  <library expandedCategories="Library,Project" />
  <window width="1440" height="855" x="-9" y="20" />
  <hdlexample language="VERILOG" />
+=======
+   <clockname preferredWidth="380" />
+   <clocksource preferredWidth="379" />
+   <frequency preferredWidth="375" />
+  </columns>
+ </clocktable>
+ <library expandedCategories="Library,Project" />
+ <window width="1460" height="856" x="-9" y="20" />
+ <hdlexample language="VHDL" />
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
 </preferences>

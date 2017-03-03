@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+<<<<<<< HEAD
 		<item value="317" key="DIALOG_WIDTH"/>
 		<item value="142" key="DIALOG_Y_ORIGIN"/>
 		<item value="512" key="DIALOG_HEIGHT"/>
 		<item value="1015" key="DIALOG_X_ORIGIN"/>
+=======
+		<item value="311" key="DIALOG_WIDTH"/>
+		<item value="91" key="DIALOG_Y_ORIGIN"/>
+		<item value="479" key="DIALOG_HEIGHT"/>
+		<item value="977" key="DIALOG_X_ORIGIN"/>
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
 		<item value="1|Cantarell|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
@@ -13,6 +20,7 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
+<<<<<<< HEAD
 		<item value="inet" key="selection"/>
 		<list key="findhistory">
 			<item value="inet"/>
@@ -23,6 +31,11 @@
 			<item value="client"/>
 			<item value="inet_a"/>
 			<item value="ineta"/>
+=======
+		<item value="VIDEO" key="selection"/>
+		<list key="findhistory">
+			<item value="Video"/>
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
 		</list>
 		<list key="replacehistory">
 		</list>

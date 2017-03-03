@@ -1,10 +1,18 @@
 <sld_project_info>
   <project>
+<<<<<<< HEAD
     <hash md5_digest_80b="1ed376e75d4db0cf918a"/>
   </project>
   <file_info>
     <file checksum="0x009AB7DC" device="EP2C35F672C6" path="niosII_microc_capstone.sof" usercode="0xFFFFFFFF"/>
     <file checksum="0x1BD1A456" device="EPCS16" path="niosII_microc_capstone.pof" usercode="0x00000000"/>
+=======
+    <hash md5_digest_80b="bb7e1ced7710f0992c1e"/>
+  </project>
+  <file_info>
+    <file checksum="0x0091AC37" device="EP2C35F672C6" path="niosII_microc_capstone.sof" usercode="0xFFFFFFFF"/>
+    <file checksum="0x1BDA796B" device="EPCS16" path="niosII_microc_capstone.pof" usercode="0x00000000"/>
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
   </file_info>
   <hub_info ir_width="2" node_count="2"/>
   <node_info>

@@ -149,6 +149,7 @@ module niosII_system_id_router_002
 
 
         if (destid == 0 ) begin
+<<<<<<< HEAD
             src_channel = 12'b001;
         end
         if (destid == 1 ) begin
@@ -156,6 +157,12 @@ module niosII_system_id_router_002
         end
         if (destid == 2 ) begin
             src_channel = 12'b100;
+=======
+            src_channel = 11'b01;
+        end
+        if (destid == 1 ) begin
+            src_channel = 11'b10;
+>>>>>>> 5ad83e7060fa5395a087dcd97f7ed6f833c3ac8b
         end
 
 
