@@ -32,6 +32,7 @@
 #include "libport.h"
 #include "osport.h"
 #include "tcpport.h"
+#include "dns.h"
 
 #ifdef DEBUG
   #include alt_debug.h
@@ -1459,6 +1460,58 @@ void WSTask()
       }
     }  
   } /* while(1) */
+}
+
+/*
+ * TODO: We need this to trigger on a button press, so it works properly. Also need to get rid of the other task as well.
+ * 		 Possibly a lot of other function in this file that we should get rid of.
+ */
+void WSClientTask()
+{
+  int     clientSock, commCheck;
+  struct  sockaddr_in servAddr;
+  struct  hostent *server;
+  fd_set  readfds, writefds;
+  static  http_conn     conn[HTTP_NUM_CONNECTIONS];
+  char	  buffer[256];
+
+  /*
+   * Create the client socket we will be using for connecting to the server
+   */
+  if ((clientSock = socket(AF_INET, SOCK_STREAM, 0)) < 0)
+  {
+    die_with_error("[WSClientTask] Error creating client socket");
+  }
+
+  /*
+   * Creating the setting for the server we are going to connect to. Need to set port to the HTTP port, and the IP address of the server.
+   */
+  servAddr.sin_family = AF_INET;
+  //servAddr.sin_port = htons(HTTP_PORT);  //TODO might change the port so that I can test it from computer to computer.
+  servAddr.sin_port = htons(7891);
+  //servAddr.sin_addr.s_addr = INADDR_ANY; //TODO Believe this has to be IP address of whatever were connecting to.
+  //inet_aton("129.128.211.179", &servAddr.sin_addr);
+  servAddr.sin_addr.s_addr = inet_addr("192.168.1.101");
+
+  if(connect(clientSock, (struct sockaddr *) &servAddr, sizeof(servAddr)) < 0){
+	  //printf("Error connecting to the Server");
+	  die_with_error("[WSClientTask] Error connecting to the Server");
+  }
+
+  //test to see if we can write stuff to the server. Need to check errors.
+  commCheck = write(clientSock, "Hello World", 13);
+  if(commCheck < 0){
+	  printf("Error trying to write to the socket");
+  }
+
+  //test for reading
+  commCheck = read(clientSock, buffer, 256);
+  if(commCheck < 0){
+	  printf("Error trying to write to the socket");
+  }
+  printf("%s\n",buffer);
+  close(clientSock);
+  return; //TODO: will this return break the program?
 }
 
 /******************************************************************************

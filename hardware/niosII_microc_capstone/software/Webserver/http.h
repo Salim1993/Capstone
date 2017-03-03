@@ -22,6 +22,7 @@
 #define   HTTP_PORT             80    /* TCP port number to listen on */
 #define   HTTP_NUM_CONNECTIONS  6     /* Maximum concurrent HTTP connections */
 #define   HTTP_MAX_LINE_SIZE    256   /* The maximum size of any line. */
+#define   TEST_BUFFER_SIZE      13    /* The size of the test buffer we will send out*/
 
 #define   HTTP_DEFAULT_FILE       "/index.html"
 #define   HTTP_VERSION_STRING     "HTTP/1.1 "

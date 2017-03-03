@@ -46,7 +46,8 @@ obj/default/http.o: http.c ../Webserver_bsp//HAL/inc/sys/alt_alarm.h \
   ../Webserver_bsp//iniche/src/h/sockvar.h \
   ../Webserver_bsp//iniche/src/h/sockcall.h \
   ../Webserver_bsp//iniche/src/h/bsdsock.h \
-  ../Webserver_bsp//iniche/src/h/tcpport.h
+  ../Webserver_bsp//iniche/src/h/tcpport.h \
+  ../Webserver_bsp//iniche/src/h/dns.h
 
 ../Webserver_bsp//HAL/inc/sys/alt_alarm.h:
 
@@ -163,3 +164,5 @@ web_server.h:
 ../Webserver_bsp//iniche/src/h/bsdsock.h:
 
 ../Webserver_bsp//iniche/src/h/tcpport.h:
+
+../Webserver_bsp//iniche/src/h/dns.h:
