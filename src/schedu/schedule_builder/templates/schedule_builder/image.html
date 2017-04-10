@@ -1,22 +1,52 @@
+<!--{% load static %} -->
 <html>
-	<head>
+	<head id="head">
+		<div id="imageMe">
+			<h1 style="color:#FFFF00;width:200px;height:200px">Hello World!</h1>
+		</div>	
+<!--		<img id = "image" src="{% static 'schedule_builder/lena512.bmp' %}">  -->
+		<img id = "image" src="./lena512.bmp"> 
 		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 		<meta content="utf-8" http-equiv="encoding">
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" ></script>
+<!--		<script type="text/javascript" src="{% static 'schedule_builder/dom-to-image.js' %}"></script> -->
+		<script type="text/javascript" src="../../static/schedule_builder/dom-to-image.js"></script>
 		<script type="text/javascript">
-			$( document ).ready(function(){
-				window.WebSocket = window.WebSocket || window.MozWebSocket;
-				var socket = new WebSocket('ws://127.0.0.1:3000', 'dumb-increment-protocol');
-				socket.onopen = function(){
-					alert("Socket connection established");
-				}
-				socket.send(System.IO.File.ReadAllBytes("image"));
+			$(document).ready(function(){
+
+				var img = document.getElementById("imageMe");
+				domtoimage.toBmp(img, {width:100, height:100})
+					.then(function (dataUrl) {
+						dataUrl += "==";
+						imagePieces = [];
+						var strLen = dataUrl.length;
+						for(var offset = 0; offset < strLen; offset += 7800){
+							imagePieces.push(dataUrl.slice(offset, 7800 + offset));
+						}
+						var i = 0;
+						var xhr = new XMLHttpRequest(i);
+						xhr.open("GET", "http://192.168.1.100/IMAGE_REQUEST", true);
+						xhr.onload = function() {
+							if(xhr.status === 200){
+								if(xhr.responseText === "SEND_DATA"){
+
+									xhr.open("POST", "http://192.168.1.100/IMAGE_DATA", true);
+
+									xhr.send(imagePieces[i]);
+									i++;
+
+								}
+							}
+						}
+						xhr.send(null);
+						
+						var newImg = '<img src="' + dataUrl + '"/>';
+						$('body').append(newImg);
+					});				
 			});
 		</script>
 	</head>
-	<body >
-
-		<img id = "image" src="http://www.ece.rice.edu/~wakin/images/lena512.bmp"> 
-
+	<body id="body">
+		<p id="stuff">AAAAA</p>
 	</body>
 </html>

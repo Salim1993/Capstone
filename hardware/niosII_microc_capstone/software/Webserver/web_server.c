@@ -34,8 +34,8 @@
 #include <errno.h>
 #include <ctype.h>
 #include "system.h"
-//#include "altera_avalon_pio_regs.h"
 #include <unistd.h>
+#include "dm9000a.h"
 
 /* Web Server definitions */
 #include "alt_error_handler.h"
@@ -47,8 +47,9 @@
 #include "osport.h"
 #include "tcpport.h"
 #include "net.h"
-#include "dm9000a.h"
 #include "altera_up_avalon_character_lcd.h"
+#include "altera_up_sd_card_avalon_interface.h"
+#include "altera_up_avalon_video_pixel_buffer_dma.h"
 
 #define LCD_DISPLAY_NAME CHARACTER_LCD_0_NAME
 
@@ -126,17 +127,6 @@ void lcd_ip_addr()
   	} else {
   		alt_up_character_lcd_string(lcd, "Error with IP");
   	}
-
-
-  /*
-  lcdDevice = fopen( "/dev/lcd_display", "w" );
-  fprintf(lcdDevice, "\nIP Address\n%d.%d.%d.%d\n",
-        ip4_addr1(*ipaddr),
-        ip4_addr2(*ipaddr),
-        ip4_addr3(*ipaddr),
-        ip4_addr4(*ipaddr));
-  fclose( lcdDevice );
-  */
 }
 #endif
 
@@ -232,16 +222,9 @@ OS_EVENT *board_control_mbox;
 
 int main (int argc, char* argv[], char* envp[])
 {
-
-	/**
-	alt_up_character_lcd_dev *lcd = alt_up_character_lcd_open_dev(CHARACTER_LCD_0_NAME);
-	alt_up_character_lcd_init(lcd);
-	alt_up_character_lcd_string(lcd, "Hello");
-	*/
-	DM9000A_INSTANCE(DM9000A,dm9000a_0);
-	DM9000A_INIT(DM9000A,dm9000a_0);
-
   /* Initialize the current flash block, for flash programming. */
+	DM9000A_INSTANCE(DM9000A_IF_0,dm9000a_0);
+	DM9000A_INIT(DM9000A_IF_0,dm9000a_0);
   
   current_flash_block = -1;
   
@@ -264,8 +247,6 @@ int main (int argc, char* argv[], char* envp[])
                              NULL,
                              0);
   alt_uCOSIIErrorHandler(error_code, 0);
-
-
 
 
   /*
@@ -351,17 +332,9 @@ void lcd_output_text( char text[20] )
 #endif
   else
   {
-
-	alt_up_character_lcd_dev *lcd = alt_up_character_lcd_open_dev(CHARACTER_LCD_0_NAME);
-	alt_up_character_lcd_init(lcd);
-	alt_up_character_lcd_string(lcd, text);
-
-
-	/*
-    lcdDevice = fopen( "/dev/lcd_display", "w" );
-    fprintf(lcdDevice, "\n\n%s", text);
-    fclose( lcdDevice );
-    */
+	  alt_up_character_lcd_dev *lcd = alt_up_character_lcd_open_dev(CHARACTER_LCD_0_NAME);
+	  alt_up_character_lcd_init(lcd);
+	  alt_up_character_lcd_string(lcd, text);
   }
 }
 #endif
@@ -385,7 +358,6 @@ void board_control_task(void *pdata)
       {
         /* Suspend the task and clear the LED. */
         OSTaskSuspend(LED_PRIO);
-        //IOWR_ALTERA_AVALON_PIO_DATA( LED_PIO_BASE, 0 );
       }
       
       if (board_control_mbox_contents->SSD_ON)
@@ -433,7 +405,6 @@ void LED_task(void* pdata)
     {
       led = led << 1;
     }
-    //IOWR_ALTERA_AVALON_PIO_DATA(LED_PIO_BASE, led);
     OSTimeDlyHMSM(0,0,0,50);
   }
 }
